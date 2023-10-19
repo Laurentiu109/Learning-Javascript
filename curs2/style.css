@@ -1,0 +1,56 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  color: lightblue;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 900;
+  /* font-family: cursive; */
+  display: block; /* bloc este predefinit pe p */
+  display: inline;
+}
+
+span {
+  background-color: green;
+  width: 300px; /* span este predefinit cu display inline 
+  elemenetele inline nu pot fi dimensionate */
+  display: block;
+  display: inline-block;
+}
+
+/* # reprezinta apelarea unui element cu id */
+#absolutOrice {
+  color: red;
+}
+
+/* . reprezinta apelarea unui element cu class */
+.absolutOrice {
+  color: yellow;
+}
+
+.fundalRosu {
+  background-color: red;
+}
+
+/* 
+CSS INLINE > ID > CLASS > element > mostenire
+Apelarea unui element bate mostenirea
+*/
+
+.buton {
+  background-color: #149911;
+  color: #f1edee;
+  width: 240px;
+  display: block;
+  margin: 50px auto; /* asa centram un block */
+  padding: 15px 0px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  /* box-shadow: dreapta jos spread(imprastiat) culoare */
+  border: 2px solid #ffffff;
+  /* grosime, tip de bordura, culoare */
+}

@@ -1,0 +1,114 @@
+/* start reset */
+a {
+  text-decoration: none;
+}
+
+* {
+  /* * = all elements */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*  rezolva probleme de padding si width */
+}
+
+ul,
+ol {
+  /* selectam si ul si ol separate cu virgula */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* end reset */
+
+.parinte {
+  border: 1px solid black;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between; /* pe orizontala */
+  align-items: center; /* pe verticala */
+}
+
+.copil {
+  border: 1px solid red;
+  padding: 5px;
+}
+
+.copil2 {
+  height: 200px;
+}
+
+header {
+  padding: 10px;
+  background-color: darkblue;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .parinte copil */
+
+.nav a {
+  /* Doar a care au unul din parinti un element cu clasa nav */
+  display: inline-block;
+  color: white;
+  padding: 10px 15px;
+}
+
+.fa-grav {
+  font-size: 400px;
+}
+
+.card {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin: 100px auto;
+  width: 300px;
+}
+
+.content {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.content ul {
+  display: flex;
+  margin: 20px 0;
+}
+
+.content .fa {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .fa-facebook {
+  color: #ffffff;
+  background-color: #4267b2;
+}
+
+.content .fa-twitter {
+  color: #ffffff;
+  background-color: #00acee;
+}
+
+.content .fa-linkedin {
+  color: #ffffff;
+  background-color: #2867b2;
+}
+
+.content p {
+  color: #666666;
+}
+
+.content > a {
+  /* .content trebuie sa fie parinte direct al lui a */
+  border: 2px solid black;
+  color: #333333;
+  display: inline-block;
+  padding: 10px 20px;
+}

@@ -1,0 +1,124 @@
+/* start reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img-responsive {
+  display: block; /* scoate spatiul gol de sub*/
+  max-width: 100%;
+}
+
+html {
+  font-size: 16px; /* predefinit */
+}
+/* end reset */
+
+.container {
+  max-width: 960px;
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  border: 5px solid red;
+  display: flex;
+  flex-wrap: wrap; /* necesar pentru responsive*/
+}
+
+.col {
+  border: 5px solid green;
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  /* tablete */
+  /* tratare ca un css separat, dar conditionat */
+  .container {
+    width: 94%;
+    background-color: grey;
+  }
+  .sfert {
+    flex: unset;
+    width: 50%;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  body {
+    background-color: black;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  body {
+    background-color: pink;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  /* Doar reetina display */
+  .container {
+    display: none;
+  }
+}
+
+@media (min-resolution: 563ppi) {
+  /* DOAR samsung s20 */
+}
+
+@media (max-width: 767px) {
+  /* SMARTPHONE  */
+  .container {
+    width: 100%;
+    background-color: darkkhaki;
+  }
+  .sfert {
+    width: 100%;
+  }
+  .treime,
+  .jumatate {
+    flex: unset;
+    width: 100%;
+  }
+}
+
+@media (min-width: 2000px) {
+  html {
+    font-size: 18px;
+  }
+  .container {
+    background-color: red;
+  }
+}
+
+@media (min-width: 2600px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.CSS-normal {
+  /* se aplica doar < 768px */
+}
+
+@media (min-width: 768px) {
+  /* tablete */
+}
+
+@media (min-width: 1024px) {
+  /* desktop */
+}
+
+@media (min-width: 1921px) {
+  /* peste full HD adica 2k */
+}
+
+@media (min-width: 2161px) {
+  /* 4k */
+}

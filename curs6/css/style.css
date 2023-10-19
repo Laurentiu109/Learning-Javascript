@@ -1,0 +1,198 @@
+/* start reset */
+html {
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+/* end reset */
+
+.relative {
+  position: relative;
+  top: -10px;
+  left: 200px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.absolute {
+  position: absolute;
+  top: 10px;
+}
+
+.fixed {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sticky {
+  /* position relative dar ia 
+  top/right de la fixed */
+  position: sticky;
+  top: 60px;
+  /* 
+  Daca aveti probleme verificati sa nu aveti
+  pe parinti overflow: hidden
+  */
+}
+
+.static {
+  position: static;
+  top: 50px;
+  left: 50px;
+  /* 
+  NU suporta coordonate
+  NU poate fi folosit ca parinte pentru absolute
+  */
+}
+
+.like {
+  display: inline-flex;
+  padding: 10px 15px;
+  background-color: #3b5998;
+  color: #ffffff;
+}
+
+.like .fa {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.like span {
+  position: relative;
+  top: 8px;
+  /* 
+  position relative se foloseste la fixuri
+  marunte ca acesta
+  */
+}
+
+.parinte {
+  border: 1px solid red;
+  width: 300px;
+  position: relative;
+  /* 
+  am folosit relative pentru ca fara coordonate
+  nu face nimic dar ajuta copilul absolute
+  */
+}
+
+.parinte img {
+  position: relative;
+  z-index: 1;
+}
+
+.parinte span {
+  position: absolute;
+  background-color: yellow;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.parinte div {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #2b2922;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  z-index: 2;
+}
+
+header ul {
+  display: flex;
+}
+
+.chat {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  color: blue;
+}
+
+.container {
+  border: 1px solid red;
+  display: flex;
+  height: 800px;
+}
+
+aside {
+  width: 300px;
+  border: 1px solid blue;
+}
+
+main {
+  flex: 1;
+  border: 1px dotted green;
+}
+
+nav {
+  background-color: red;
+  position: sticky;
+  top: 60px;
+  z-index: 1;
+}

@@ -1,0 +1,8 @@
+git add .
+git commmit -m "modificari name"
+git push
+git pull
+git status
+
+
+git clone url

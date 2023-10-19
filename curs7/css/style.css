@@ -1,0 +1,251 @@
+/* start reset */
+html {
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+input,
+input:focus,
+textarea,
+textarea:focus,
+select,
+select:focus {
+  box-shadow: unset;
+  outline: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+/* end reset */
+
+p:first-child {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+p:last-child {
+  font-size: 10px;
+  color: grey;
+}
+
+p:nth-child(3) {
+  color: red;
+}
+
+p:nth-child(even) {
+  background-color: #b0b0b0;
+}
+
+p {
+  background-color: white;
+}
+
+/* p:nth-child(odd) {
+  font-size: 16px;
+  color: green;
+} */
+
+p:nth-of-type(odd) {
+  /* 
+  e mai specific decat nth-child
+  NU tine cont de alte elemente intre P
+  */
+  font-size: 16px;
+  color: green;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+tr:nth-child(even) {
+  background-color: b0b0b0;
+}
+
+tr:nth-of-type(even) {
+  background-color: #b0b0b0;
+}
+
+tr:nth-child(3n) {
+  color: red;
+}
+
+tr:nth-child(3n + 6) {
+  background-color: green;
+}
+
+/* 
+PRIORITATEA SELECTORILOR DE CSS
+inline > id > class > el:nthchild > el
+*/
+
+.a {
+  font-size: 50px;
+  color: yellow;
+  background-color: black;
+  transition: color 2s, font-size 5s;
+}
+
+.a:hover {
+  /* cursorul deasupra elementului */
+  font-size: 100px;
+  color: red;
+}
+
+.a:active {
+  /* Cursorul deasupra si butonul de click apasat */
+  color: blue;
+}
+
+.a:visited {
+  /* Am vizitat deja adresa catre care duce link-ul */
+  /* color: black; */
+}
+
+.btn {
+  display: inline-block;
+  border: 2px solid #2bb686;
+  border-radius: 5px;
+  padding: 10px 50px;
+  background-color: #2bb686;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #2bb686;
+}
+
+input {
+  margin: 10px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: grey;
+  transition: border-color 0.6s;
+}
+
+input:hover {
+  border-color: lightgray;
+}
+
+input:focus {
+  /* elementul a primit un click si
+  este selectat */
+  border-color: red;
+}
+
+.nav {
+  display: inline-block;
+  width: 300px;
+}
+
+.nav > li {
+  position: relative;
+  border: 1px solid black;
+}
+
+.nav > li > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.nav > li:hover > ul {
+  display: block;
+}
+
+.hover,
+.hover2 {
+  display: block;
+  font-size: 30px;
+  border: 1px solid red;
+  transform-origin: center;
+  transition: all 1s;
+}
+
+.hover:hover {
+  /* nu functioneaza pe inline doar daca este block */
+  transform: scale(20);
+}
+
+.hover2:hover {
+  transform: rotate(90deg);
+}
+
+.patrat {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border: 1px solid green;
+  background-image: url(https://source.unsplash.com/300x600);
+}
+
+.patrat:hover {
+  background-image: url(https://source.unsplash.com/300x601);
+}
+
+.fa {
+  position: absolute;
+  font-size: 60px;
+  top: 50%;
+  left: 50%;
+  border: 1px solid red;
+  transform: translate(-50%, -50%);
+  /* 
+  procentul e din propria dimensiuni
+  nu din dimensiunea parintelui
+  */
+}
