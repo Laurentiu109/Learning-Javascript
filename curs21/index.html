@@ -1,0 +1,185 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="brand">
+          <a href="index.html">
+            <i class="fa fa-grav"></i>
+          </a>
+          <form action="index.thml" method="get" autocomplete="off">
+            <input
+              type="search"
+              id="topSearch"
+              name="s"
+              placeholder="Search..."
+            />
+            <i class="fa fa-search"></i>
+          </form>
+        </div>
+        <div class="navigation">
+          <a href="#">
+            <img src="https://source.unsplash.com/80x80" alt="Nume prenume" />
+          </a>
+          <a href="#/" id="notificationIcon">
+            <i class="fa fa-globe"></i>
+            <span>2</span>
+          </a>
+          <a href="#.">
+            <i class="fa fa-comments-o" id="messagesIcon"></i>
+            <span>2</span>
+          </a>
+          <a href="#/" id="settingsIcon">
+            <i class="fa fa-cog"></i>
+          </a>
+          <div class="dropdown notification" style="display: none">
+            <!-- start notification -->
+            <div class="single-notification">
+              <img src="https://source.unsplash.com/41x41" alt="" />
+              <div>
+                <p>Nume prenume</p>
+                <p>A dat like</p>
+              </div>
+            </div>
+            <!-- end notification -->
+            <!-- start notification -->
+            <div class="single-notification">
+              <img src="https://source.unsplash.com/42x42" alt="" />
+              <div>
+                <p>Nume prenume</p>
+                <p>A dat like</p>
+              </div>
+            </div>
+            <!-- end notification -->
+            <!-- start notification -->
+            <div class="single-notification">
+              <img src="https://source.unsplash.com/43x43" alt="" />
+              <div>
+                <p>Nume prenume</p>
+                <p>A dat like</p>
+              </div>
+            </div>
+            <!-- end notification -->
+          </div>
+          <div class="dropdown messages" style="display: none">
+            <!-- start notification -->
+            <div class="single-notification">
+              <img src="https://source.unsplash.com/44x44" alt="" />
+              <div>
+                <p>Nume prenume</p>
+                <p>Hai afara!</p>
+              </div>
+            </div>
+            <!-- end notification -->
+            <!-- start notification -->
+            <div class="single-notification">
+              <img src="https://source.unsplash.com/45x45" alt="" />
+              <div>
+                <p>Nume prenume</p>
+                <p>Mergem la un fotbal ?</p>
+              </div>
+            </div>
+            <!-- end notification -->
+            <!-- start notification -->
+            <div class="single-notification">
+              <img src="https://source.unsplash.com/46x46" alt="" />
+              <div
+                <p>Nume prenume</p>
+                <p>Ce carte ai citit ?</p>
+              </div>
+            </div>
+            <!-- end notification -->
+          </div>
+          <div class="dropdown settings" style="display: none">
+            <h3>Nume Prenume</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-user"></i>
+                  Account</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-lock"></i>
+                  Security</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-sign-out"></i>
+                  Log out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container content">
+      <aside class="hide-mobile">
+        <div class="sticky">
+          <div class="user-info" id="userInfo"></div>
+          <ul class="filters">
+            <li>
+              <a href="#" class="active">
+                <i class="fa fa-html5"></i>
+                <span>Front-end</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-server"></i>
+                <span>Back-end</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-paint-brush"></i>
+                <span>Design</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main id="main"></main>
+      <aside>
+        <div class="sticky">
+          <div class="ads" id="adSpace"></div>
+          <ul class="footer">
+            <li>
+              <a href="#">privacy policy</a>
+            </li>
+            <li>
+              <a href="#">careers</a>
+            </li>
+            <li>
+              <a href="#">contact support</a>
+            </li>
+            <li>
+              <a href="#">help</a>
+            </li>
+            <li>
+              <a href="#">about</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <script src="date.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

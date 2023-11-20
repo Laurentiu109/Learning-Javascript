@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- modul in care trateaza JS toata pagina WEB -->
+    DOM - Document Object Model
+
+    <div id="primulDiv" style="display: grid">Sunt un div</div>
+
+    <div class="alDoileaDiv">Sunt un div</div>
+    <div class="alDoileaDiv">Sunt un div</div>
+    <div class="alDoileaDiv">Sunt un div</div>
+
+    <input id="input" />
+
+    <div>
+      <span onclick="showItem2('home')">Home</span>
+      <span onclick="showItem2('contact')">Contact</span>
+      <span onclick="showItem2('about')">About</span>
+
+      <p class="para home" style="display: none">Home paragraph</p>
+      <p class="para contact" style="display: none">Contact paragraph</p>
+      <p class="para about" style="display: none">About paragraph</p>
+    </div>
+
+    <div>
+      <h1 onclick="changeColor()">Change paragraph color</h1>
+
+      <p id="para">My color is black</p>
+    </div>
+
+    <div>
+      <button
+        onmouseenter="hoverHome()"
+        onmouseleave="endHoverHome()"
+        type="button"
+      >
+        Show home
+      </button>
+      <button
+        onmouseenter="hoverAbout()"
+        onmouseleave="endHoverAbout()"
+        type="button"
+      >
+        Show about
+      </button>
+
+      <p id="pHome" style="display: none">Home</p>
+      <p id="pAbout" style="display: none">About</p>
+    </div>
+
+    <h1>TEMA</h1>
+    <div>
+      <button
+        onmouseenter="handleMouseOver('homet')"
+        onmouseleave="handleMouseOver()"
+        type="button"
+      >
+        Home
+      </button>
+      <button
+        onmouseenter="handleMouseOver('servt')"
+        onmouseleave="handleMouseOver()"
+        type="button"
+      >
+        Services
+      </button>
+      <button
+        onmouseenter="handleMouseOver('aboutt')"
+        onmouseleave="handleMouseOver()"
+        type="button"
+      >
+        About
+      </button>
+
+      <p class="tema homet" style="display: none">Home paragraph</p>
+      <p class="tema servt" style="display: none">Services paragraph</p>
+      <p class="tema aboutt" style="display: none">About paragraph</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
