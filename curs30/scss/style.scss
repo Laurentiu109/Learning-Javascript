@@ -1,0 +1,45 @@
+// comment doar in sass
+@import "reset";
+@import "variables";
+
+/* va fi prezent in fila compilata*/
+// pages css files
+@import "pages/homepage";
+@import "pages/contact";
+@import "pages/about.scss";
+
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.curs {
+  @include borderRadius(60px);
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: black;
+    &::after {
+      color: red;
+      content: "";
+    }
+  }
+  &:active {
+    color: $red;
+  }
+}
+
+html {
+  font-size: 16px;
+  @media (max-width: 1024px) {
+    font-size: 15px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
