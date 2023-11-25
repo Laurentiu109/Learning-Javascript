@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toggle Colors</title>
+    <style>
+      .color-span {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="span1" class="color-span" onclick="changeColor('span1')"
+      >Span 1</span
+    >
+    <span id="span2" class="color-span" onclick="changeColor('span2')"
+      >Span 2</span
+    >
+
+    <script>
+      function changeColor(spanId) {
+        var span1 = document.getElementById("span1");
+        var span2 = document.getElementById("span2");
+
+        if (spanId === "span1") {
+          span1.style.backgroundColor = "blue";
+          span2.style.backgroundColor = "";
+        } else if (spanId === "span2") {
+          span2.style.backgroundColor = "red";
+          span1.style.backgroundColor = "";
+        }
+      }
+    </script>
+  </body>
+</html>

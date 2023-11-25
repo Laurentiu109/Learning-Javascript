@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curs 26</title>
+    <style>
+      *:focus {
+        outline: none;
+        box-shadow: unset;
+        border: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="ceva">text</p>
+    <input type="text" onkeyup="validateInput(this)" />
+    <span onclick="hasCallback('click', logSomething)"
+      >I HAVE A CALLBACK !!</span
+    >
+    <script src="app.js"></script>
+  </body>
+</html>
